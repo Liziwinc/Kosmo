@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+}
+ .container {   width: 75%;
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px; /* скругление углов блока */
+  padding: 16px; /* внутренние поля */
+  margin: 16px auto; /* внешние отступы */
+}
+.container img {
+  float: left; /* обтекание слева */
+  margin-right: 20px; /* пространство между аватаркой и абзацем */
+  border-radius: 50%; /* скругляет аватарку */
+  width: 90px;
+}
+
+.container span {
+  font-size: 18px;
+  margin-right: 15px;
+}
+ @media (max-width: 450px) {
+  .container {
+    text-align: center;
+  }
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+.glyphicon { margin-right:5px; }
+.thumbnail {
+ margin-bottom: 20px;
+ padding: 0px;
+ -webkit-border-radius: 0px;
+ -moz-border-radius: 0px;
+ border-radius: 0px
+}
+
+.item.list-group-item {
+ float: none;
+ width: 100%;
+ background-color: #fff;
+ margin-bottom: 10px
+}
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover {
+ background: rgb(105,65,152)
+}
+.item.list-group-item .list-group-image {
+ margin-right: 10px
+}
+.item.list-group-item .thumbnail {
+ margin-bottom: 0px
+}
+.item.list-group-item .caption {
+ padding: 9px 9px 0px 9px
+}
+.item.list-group-item:nth-of-type(odd) {
+ background: #eeeeee
+}
+.item.list-group-item:before, .item.list-group-item:after {
+ display: table;
+ content: " "
+}
+.item.list-group-item img {
+ float: left
+}
+.item.list-group-item:after {
+ clear: both
+}
+.list-group-item-text {
+ margin: 0 0 11px
+}
+.holiday {
+  overflow: hidden;
+  font-size: 16px;
+}
+.holiday dt, .holiday dd {
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0 0.625em 0 0.875em;
+  color: #000000;
+  box-sizing: border-box;
+}
+dt {
+  width: 10%;
+  float: left;
+  clear: right;
+  background: #808080;
+  font-weight: bold;
+}
+dd {
+  width: 90%;
+  float: right;
+  margin-left: 0;
+  margin-bottom: .3125em;
+  border: 1px solid #666666;
+  border-left: none;
+}
+* {
+   box-sizing: border-box;
+}
+
+.decor {
+   position: relative;
+   max-width: 400px;
+   margin: 0;
+   background: white;
+   border-radius: 30px;
+}
+
+.form-inner {
+   padding: 50px;
+}
+.form-inner input, .form-inner textarea {
+   display: block;
+   width: 100%;
+   padding: 0 20px;
+   margin-bottom: 10px;
+   background: #E9EFF6;
+   line-height: 40px;
+   border-width: 0;
+   border-radius: 20px;
+   font-family: 'Roboto', sans-serif;
+}
+.form-inner input[type="submit"] {
+   margin-top: 30px;
+   background: #808080;
+   border-bottom: 4px solid #666666;
+   color: white;
+   font-size: 14px;
+}
+.form-inner textarea {
+   resize: none;
+}
+.form-inner h3 {
+   margin-top: 0;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   font-size: 24px;
+   color: #707981;
+}
+.button-6 {
+    background: transparent;
+    border-width: 0;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    transition: .3s;
+}
+.button-6 span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    background: #4d4d4d;
+    color: white;
+    padding: 0 30px;
+    line-height: 40px;
+}
+.button-6:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    left: -5px;
+    top: -5px;
+    background: #808080;
+    z-index: 1;
+    transition: .4s ease-out;
+}
+.button-6:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    right: -5px;
+    bottom: -5px;
+    background: #666666;
+    transition: .4s ease-out .1s;
+}
+.button-6:hover:before {
+    transform: translate(5px, 5px);
+}
+.button-6:hover:after {
+    transform: translate(-5px, -5px);
+}
+.button-5 {
+    background: transparent;
+    border-width: 0;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    transition: .3s;
+}
+.button-5 span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    background: #333;
+    color: white;
+    padding: 0 30px;
+    line-height: 40px;
+}
